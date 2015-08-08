@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/cabecera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <ImageView
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:src="@drawable/ic_action_view_as_grid" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:src="@drawable/ic_action_view_as_list" >
+        </ImageView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listaresultados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cabecera"
+        android:background="#000000"
+        android:divider="#FFFFFF"
+        android:dividerHeight="@dimen/activity_horizontal_margin"
+        tools:listitem="@layout/lista_resultados" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" 
+        android:src="@drawable/logo"/>
+    
+    <Button
+            android:id="@+id/filtros"
+			android:layout_width="match_parent"
+        	android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="#000000"
+        	android:gravity="center"
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold"
+            android:text="@string/filtros" 
+            android:layout_alignParentBottom="true"
+            />
+
+</RelativeLayout>

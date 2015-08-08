@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Pais -->
+
+
+    <Spinner
+        android:id="@+id/filtrospinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- provincia -->
+
+
+    <EditText
+        android:id="@+id/filtrointroprovincia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/filtrospinner" 
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"
+        android:hint="@string/proesci"/>
+
+    <!-- tipo -->
+
+    <TextView
+        android:id="@+id/filtrotipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filtrointroprovincia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/tipaloja"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/filtrobotonestipo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filtrotipo"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/casa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="casab" >
+        </Button>
+
+        <Button
+            android:id="@+id/piso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="pisob" >
+        </Button>
+
+        <Button
+            android:id="@+id/local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:clickable="false"
+            android:text="local" >
+        </Button>
+
+        <Button
+            android:id="@+id/apartamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="apart" >
+        </Button>
+
+        <Button
+            android:id="@+id/chalet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="chale" >
+        </Button>
+    </LinearLayout>
+
+    <!-- capacidad -->
+
+    <LinearLayout
+        android:id="@+id/capacidad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filtrobotonestipo"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/menoscapacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="-" >
+        </Button>
+
+        <TextView
+            android:id="@+id/filtrocapacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="#000000"
+            android:text="huesped1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mascapacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="+" >
+        </Button>
+    </LinearLayout>
+
+    <!-- dormitorios -->
+
+    <LinearLayout
+        android:id="@+id/dormitorios"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capacidad"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/menosdormitorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="-" >
+        </Button>
+
+        <TextView
+            android:id="@+id/filtrodormitorios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="#000000"
+            android:text="dormi1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/masdormitorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="+" >
+        </Button>
+    </LinearLayout>
+
+    <!-- precio -->
+
+    <TextView
+        android:id="@+id/filtroprecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dormitorios"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+    
+    <LinearLayout
+        android:id="@+id/seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filtroprecio"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/aplifiltro"
+			android:layout_width="match_parent"
+        	android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="#000000"
+        	android:gravity="center"
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold"
+            android:text="@string/filtros" 
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

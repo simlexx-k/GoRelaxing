@@ -1,0 +1,293 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/cabecera"
+            android:layout_width="match_parent"
+           	android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" 
+            android:layout_marginTop="5dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+ 
+            <TextView
+                android:id="@+id/preciores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/eurores"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eurores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#000000"
+                android:text="€"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cambiomoneda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:text="@string/avisocambiomoneda"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/descripcionres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cabecera"
+            android:layout_below="@+id/cabecera"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/descripcion"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- textview con descripcion descripcion -->
+
+        <TextView
+            android:id="@+id/descripcionjson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descripcionres"
+            android:background="#CCDCDCDC"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <!--  -->
+
+        <TextView
+            android:id="@+id/caracteristicasres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cabecera"
+            android:layout_below="@+id/descripcionjson"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/caracteristicas"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- textview con caracteristicas -->
+
+        <TextView
+            android:id="@+id/caracteristicasjson"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/caracteristicasres"
+            android:background="#CCDCDCDC"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!--  -->
+
+        <TextView
+            android:id="@+id/camas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caracteristicasres"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/camasimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caracteristicasres"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/camas"
+            android:src="@drawable/habitacion" />
+
+        <TextView
+            android:id="@+id/personas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camas"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/personasimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camas"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/personas"
+            android:src="@drawable/capacidadb" />
+
+        <TextView
+            android:id="@+id/metrosdirec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personas"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <!--  -->
+
+        <TextView
+            android:id="@+id/disponibilidadres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cabecera"
+            android:layout_below="@+id/metrosdirec"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/disponibilidad"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- textview con disponibilidad -->
+
+        <WebView
+            android:id="@+id/urlcalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disponibilidadres" >
+        </WebView>
+
+        <!--  -->
+
+        <TextView
+            android:id="@+id/comentariosres"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/cabecera"
+            android:layout_below="@+id/urlcalendar"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/comentarios"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mapares"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/cabecera"
+            android:layout_below="@+id/comentariosres"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/mapa"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- textview con comentarios -->
+
+        <TextView
+            android:id="@+id/popularidadres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cabecera"
+            android:layout_below="@+id/mapares"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/anfitrion"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- textview con descripcion descripcion -->
+
+        <TextView
+            android:id="@+id/popularidadjson"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/popularidadres"
+            android:background="#CCDCDCDC"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/fotohost"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/popularidadres"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="center"
+            android:src="@drawable/logo_ico" />
+
+        <TextView
+            android:id="@+id/nombrehost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popularidadres"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/fotohost"
+            android:text="@string/anfitrion2"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/avisoenviohost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fotohost"
+            android:text="@string/erroranfitrion"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/introcomenthost"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/fotohost"
+            android:layout_marginTop="20dp"
+            android:hint="@string/comenthost" />
+
+        <Button
+            android:id="@+id/botonsendhost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/introcomenthost"
+            android:layout_centerHorizontal="true"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="@string/conectaranfitrion"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <!--  -->
+
+    </RelativeLayout>
+
+</ScrollView>

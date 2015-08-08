@@ -1,0 +1,95 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- xml del menu -->
+    <item
+        android:id="@+id/buscarmn"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="BUSCAR"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_expand"
+        android:orderInCategory="100"
+        android:showAsAction="always|collapseActionView"
+        android:title="menu">
+        <menu>
+
+            <!--
+                <item
+                android:id="@+id/registromn"
+                android:orderInCategory="100"
+                android:showAsAction="always"
+                android:title="@string/registro"/>
+            -->
+            <item
+                android:id="@+id/perfilmn"
+                android:orderInCategory="100"
+                android:showAsAction="always"
+                android:title="@string/miperfil"/>
+
+            <item
+                android:id="@+id/registromn"
+                android:orderInCategory="100"
+                android:showAsAction="always"
+                android:title="@string/registro"/>
+
+            <item
+                android:id="@+id/idiomamn"
+                android:orderInCategory="100"
+                android:showAsAction="always"
+                android:title="@string/idioma">
+                <menu>
+                    <item
+                        android:id="@+id/espmn"
+                        android:icon="@drawable/esp"
+                        android:orderInCategory="100"
+                        android:showAsAction="always"
+                        android:title="Español"/>
+                    <item
+                        android:id="@+id/engmn"
+                        android:icon="@drawable/eng"
+                        android:orderInCategory="100"
+                        android:showAsAction="always"
+                        android:title="English"/>
+                    <item
+                        android:id="@+id/demn"
+                        android:icon="@drawable/de"
+                        android:orderInCategory="100"
+                        android:showAsAction="always"
+                        android:title="Deutsch"/>
+                    <item
+                        android:id="@+id/frmn"
+                        android:icon="@drawable/fr"
+                        android:orderInCategory="100"
+                        android:showAsAction="always"
+                        android:title="Français"/>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/monedamn"
+                android:orderInCategory="100"
+                android:showAsAction="always"
+                android:title="@string/moneda">
+                <menu>
+                    <item
+                        android:id="@+id/eurmn"
+                        android:orderInCategory="100"
+                        android:showAsAction="always"
+                        android:title="€"/>
+                    <item
+                        android:id="@+id/usdmn"
+                        android:orderInCategory="100"
+                        android:showAsAction="always"
+                        android:title="$"/>
+                    <item
+                        android:id="@+id/gbpmn"
+                        android:orderInCategory="100"
+                        android:showAsAction="always"
+                        android:title="£"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+</menu>

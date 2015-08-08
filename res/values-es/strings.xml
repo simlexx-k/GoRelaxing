@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Go Relaxing</string>
+    <string name="action_settings">Settings</string>
+    <string name="registro">REGISTRO</string>
+    <string name="miperfil">LOGIN</string>
+    <string name="logout">LOGOUT</string>
+    <string name="perfil">MI PERFIL</string>
+    <string name="editperfil">EDITAR PERFIL</string>
+    <string name="publicaanuncio">PUBLICA TU ANUNCIO</string>
+    <string name="ubicacionactual">UBICACION ACTUAL</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="descripcion">DESCRIPCION</string>
+    <string name="caracteristicas">CARACTERISTICAS</string>
+    <string name="disponibilidad">DISPONIBILIDAD</string>
+    <string name="comentarios">COMENTARIOS</string>
+    <string name="anfitrion">ANFITRION</string>
+    <string name="tipopropiedad">Tipo propiedad: </string>
+    <string name="dormitorios">Dormitorios: </string>
+    <string name="capacidad">Capacidad: </string>
+    <string name="metros">Metros </string>
+    <string name="direccion">Direccion: </string>
+    <string name="idioma">CAMBIAR IDIOMA</string>
+    <string name="moneda">CAMBIAR MONEDA</string>
+    <string name="pickdate">Selecciona fecha</string>
+    <string name="botoncoment">Comentar</string>
+    <string name="anfitrion2">Hola, soy </string>
+    <string name="conectaranfitrion">Conectar con el anfitrión</string>
+    <string name="verperfil">Ver perfil</string>
+    <string name="erroranfitrion">Para conectar con el anfitrión debe iniciar su sesión</string>
+    <string name="avisocambiomoneda">Para esta divisa la cantidad es orientativa</string>
+    <string name="enviocoment">Su comentario ha sido enviado, se mostrará cuando sea moderado.  Pulsar sobre este mensaje para volver al resultado</string>
+    <string name="satelite">Satelite</string>
+    <string name="estandar">Estandar</string>
+    <string name="ruta">Ruta</string>
+    <string name="mapa">MAPA</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="usuario">USUARIO</string>
+    <string name="password">PASSWORD</string>
+    <string name="asuntomail">Alguien quiere alquilar tu casa</string>
+    <string name="confirmacionmail">Su mensaje ha sido enviado</string>
+    <string name="asuntoemail">Solicitud información</string>
+    <string name="errorlog">Tu usuario o tu contraseña no son correctos</string>
+    <string name="comenthost">Introducir mensaje a enviar</string>
+    <string name="errorcomenthost">Debes introducir mensaje a enviar</string>
+    
+    <string name="username">Nombre de usuario(correo electrónico)*</string>
+    <string name="nombre">Nombre*</string>
+    <string name="apellido1">Apellidos*</string>
+    <string name="descripcionreg">Cuéntanos algo sobre ti(Máximo 500 caracteres)</string>
+    <string name="fotografia">Fotografía</string>
+        <string name="passwordreg">Password</string>
+    
+    <string name="registrocom">Tu registro se ha completado con éxito, revisa tu email</string>
+    <string name="errorreg">Debes rellenar los campos obligatorios(*)</string>    
+    <string name="confreg">Confirmación</string> 
+    
+    <string name="addfoto">Añadir foto!!</string>
+    <string name="camara">Tomar foto con la cámara</string>
+    <string name="galeria">Escoger de la galería</string>
+    <string name="cancelar">Cancelar</string>
+    
+        <string name="avisobusq">Aviso</string>
+        <string name="errorbusq">La ciudad seleccionada no tiene resultados</string>
+        
+        <string name="aceptaredit">Datos actualizados con éxito</string>
+        
+        <string name="filtros">Aplicar filtros</string>
+        <string name="busquedaavan">BUSQUEDA AVANZADA</string>
+        
+        <string name="pais">PAIS</string>
+        <string name="proesci">PROVINCIA / CIUDAD / ESTADO</string>
+        <string name="tipaloja">TIPO ALOJAMIENTO</string>
+        <string name="huesped1">Huésped</string>
+        <string name="huesped2">Huéspedes</string>
+        <string name="dormi1">Dormitorio</string>
+        <string name="dormi2">Dormitorios</string>
+        <string name="precio1">Precio desde: </string>
+        <string name="precio2">hasta: </string>
+        
+        
+    
+	
+    
+</resources>

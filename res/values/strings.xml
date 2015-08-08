@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Go Relaxing</string>
+    <string name="action_settings">Settings</string>
+    <string name="registro">REGISTER</string>
+    <string name="miperfil">LOGIN</string>
+    <string name="logout">LOGOUT</string>
+    <string name="perfil">MY PROFILE</string>
+     <string name="editperfil">EDIT PROFILE</string>
+    <string name="publicaanuncio">PUBLISH YOUR AD</string>
+    <string name="ubicacionactual">CURRENT LOCATION</string>
+    <string name="buscar">SEARCH</string>
+    <string name="descripcion">DESCRIPTION</string>
+    <string name="caracteristicas">FEATURES</string>
+    <string name="disponibilidad">AVAILABILITY</string>
+    <string name="comentarios">COMMENTS</string>
+    <string name="anfitrion">HOST</string>
+    <string name="tipopropiedad">Type of property: </string>
+    <string name="dormitorios">Bedrooms: </string>
+    <string name="capacidad">Guests: </string>
+    <string name="metros">Meters </string>
+    <string name="direccion">Address: </string>
+    <string name="idioma">CHANGE LANGUAGE</string>
+    <string name="moneda">CHANGE CURRENCY</string>
+    <string name="pickdate">Pick a date</string>
+    <string name="botoncoment">Comment</string>
+    <string name="anfitrion2">Hello, I\'m </string>
+    <string name="conectaranfitrion">Connect with the host</string>
+    <string name="verperfil">View profile</string>
+    <string name="erroranfitrion">To connect with the host you should login</string>
+    <string name="avisocambiomoneda">For this currency the amount is indicative</string>
+    <string name="enviocoment">Your comment has been sent, it will be shown when be moderate. Click on this message to return to the result.</string>
+    <string name="satelite">Satellite</string>
+    <string name="estandar">Standard</string>
+    <string name="ruta">Route</string>
+    <string name="mapa">MAP</string>
+    <string name="aceptar">ACCEPT</string>
+    <string name="usuario">USER</string>
+    <string name="password">PASSWORD</string>
+    <string name="asuntomail">Someone wants to rent your house</string>
+    <string name="confirmacionmail">Your message has been send</string>
+    <string name="asuntoemail">Request information</string>
+    <string name="errorlog">Your user or your password are incorrect</string>
+    <string name="comenthost">Message to send</string>
+       <string name="errorcomenthost">Must enter a message to send</string>
+       
+        <string name="username">Username(email)*</string>
+    <string name="nombre">Name*</string>
+    <string name="apellido1">Surname*</string>
+    <string name="descripcionreg">Tell us about yourself (Max 500 characters)</string>
+    <string name="fotografia">Photography</string>
+    <string name="passwordreg">Password</string>
+    
+    <string name="registrocom">Your registration has been successfully completed, check your email</string>
+    <string name="errorreg">You must fill in the required fields(*)</string>
+    <string name="confreg">Confirmation</string>
+    
+    <string name="addfoto">Add Photo!!</string>
+    <string name="camara">Take photo</string>
+    <string name="galeria">Choose from Gallery</string>
+    <string name="cancelar">Cancel</string>
+    
+            <string name="avisobusq">Warning</string>
+        <string name="errorbusq">Not results found</string>
+        
+        <string name="aceptaredit">Data updated successfully</string>
+        
+        <string name="filtros">Apply filters</string>
+        <string name="busquedaavan">ADVANCED SEARCH</string>
+        
+         <string name="pais">COUNTRY</string>
+        <string name="proesci">PROVINCE / CITY / STATE</string>
+        <string name="tipaloja">ACCOMMODATION TYPE</string>
+        <string name="huesped1">Guest</string>
+        <string name="huesped2">Guests</string>
+        <string name="dormi1">Bedroom</string>
+        <string name="dormi2">Bedrooms</string>
+        <string name="precio1">Price from: </string>
+        <string name="precio2">to: </string>
+
+</resources>
